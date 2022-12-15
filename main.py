@@ -4,10 +4,10 @@ app= Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/jogos')
 def lista():
-    return('jogos.html')
+    return render_template('jogos.html')
 
 app.run()
